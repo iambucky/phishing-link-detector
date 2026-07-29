@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Model Status | AI Phishing Detector</title>
+
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h2>Admin Panel</h2>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="admin-dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="users.html">
+
+<i class="fa-solid fa-users"></i>
+
+Users
+
+</a>
+
+</li>
+
+<li>
+
+<a href="dataset.html">
+
+<i class="fa-solid fa-database"></i>
+
+Dataset
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="#">
+
+<i class="fa-solid fa-brain"></i>
+
+AI Model
+
+</a>
+
+</li>
+
+<li>
+
+<a href="logs.html">
+
+<i class="fa-solid fa-file-lines"></i>
+
+Logs
+
+</a>
+
+</li>
+
+<li>
+
+<a href="system-health.html">
+
+<i class="fa-solid fa-server"></i>
+
+System Health
+
+</a>
+
+</li>
+
+<li>
+
+<a href="../login.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>AI Model Status</h1>
+
+<div class="profile">
+
+<img src="../assets/images/avatar.png" width="40">
+
+<span>Administrator</span>
+
+</div>
+
+</div>
+
+<!-- Status Cards -->
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h2>ANN</h2>
+
+<p>Current Model</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>Online</h2>
+
+<p>Model Status</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-bullseye"></i>
+
+<h2>98.2%</h2>
+
+<p>Accuracy</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-gauge-high"></i>
+
+<h2>97.9%</h2>
+
+<p>Precision</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-rotate"></i>
+
+<h2>98.4%</h2>
+
+<p>Recall</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h2>98.1%</h2>
+
+<p>F1 Score</p>
+
+</div>
+
+</div>
+
+<!-- Model Information -->
+
+<div class="table-section">
+
+<h2>Model Information</h2>
+
+<table>
+
+<tr>
+
+<th>Model Name</th>
+
+<td>Artificial Neural Network (ANN)</td>
+
+</tr>
+
+<tr>
+
+<th>Framework</th>
+
+<td>TensorFlow / Keras</td>
+
+</tr>
+
+<tr>
+
+<th>Language</th>
+
+<td>Python</td>
+
+</tr>
+
+<tr>
+
+<th>Training Dataset</th>
+
+<td>phishing.csv</td>
+
+</tr>
+
+<tr>
+
+<th>Total Records</th>
+
+<td>11,055 URLs</td>
+
+</tr>
+
+<tr>
+
+<th>Training Split</th>
+
+<td>80%</td>
+
+</tr>
+
+<tr>
+
+<th>Testing Split</th>
+
+<td>20%</td>
+
+</tr>
+
+<tr>
+
+<th>Epochs</th>
+
+<td>50</td>
+
+</tr>
+
+<tr>
+
+<th>Optimizer</th>
+
+<td>Adam</td>
+
+</tr>
+
+<tr>
+
+<th>Loss Function</th>
+
+<td>Binary Crossentropy</td>
+
+</tr>
+
+<tr>
+
+<th>Current Status</th>
+
+<td><span class="success">Running Successfully</span></td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- Performance -->
+
+<div class="table-section">
+
+<h2>Performance Metrics</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Metric</th>
+
+<th>Value</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Accuracy</td>
+
+<td>98.2%</td>
+
+</tr>
+
+<tr>
+
+<td>Precision</td>
+
+<td>97.9%</td>
+
+</tr>
+
+<tr>
+
+<td>Recall</td>
+
+<td>98.4%</td>
+
+</tr>
+
+<tr>
+
+<td>F1 Score</td>
+
+<td>98.1%</td>
+
+</tr>
+
+<tr>
+
+<td>Training Time</td>
+
+<td>12 Minutes</td>
+
+</tr>
+
+<tr>
+
+<td>Prediction Speed</td>
+
+<td>0.08 sec</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Recent Activity -->
+
+<div class="table-section">
+
+<h2>Recent AI Activity</h2>
+
+<ul style="margin-top:20px;line-height:2;">
+
+<li>🧠 ANN model loaded successfully.</li>
+
+<li>✅ Training completed successfully.</li>
+
+<li>📈 Accuracy reached 98.2%.</li>
+
+<li>⚡ Prediction engine is online.</li>
+
+<li>🔍 Real-time URL detection enabled.</li>
+
+<li>💾 Latest model saved.</li>
+
+<li>🛡️ AI Security Engine Active.</li>
+
+</ul>
+
+</div>
+
+<!-- Actions -->
+
+<div class="table-section">
+
+<h2>Model Actions</h2>
+
+<button class="btn">Retrain Model</button>
+
+<button class="btn">Download Model</button>
+
+<button class="btn">Refresh Status</button>
+
+<button class="btn">View Training Logs</button>
+
+</div>
+
+</div>
+
+<script src="../assets/js/dashboard.js"></script>
+
+</body>
+
+</html>

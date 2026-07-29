@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>User Management | AI Phishing Detector</title>
+
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h2>Admin Panel</h2>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="admin-dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="#">
+
+<i class="fa-solid fa-users"></i>
+
+Users
+
+</a>
+
+</li>
+
+<li>
+
+<a href="dataset.html">
+
+<i class="fa-solid fa-database"></i>
+
+Dataset
+
+</a>
+
+</li>
+
+<li>
+
+<a href="model-status.html">
+
+<i class="fa-solid fa-brain"></i>
+
+AI Model
+
+</a>
+
+</li>
+
+<li>
+
+<a href="logs.html">
+
+<i class="fa-solid fa-file-lines"></i>
+
+Logs
+
+</a>
+
+</li>
+
+<li>
+
+<a href="system-health.html">
+
+<i class="fa-solid fa-server"></i>
+
+System Health
+
+</a>
+
+</li>
+
+<li>
+
+<a href="../login.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>User Management</h1>
+
+<div class="profile">
+
+<img src="../assets/images/avatar.png" width="40" alt="Admin">
+
+<span>Administrator</span>
+
+</div>
+
+</div>
+
+<!-- Statistics -->
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2>145</h2>
+
+<p>Total Users</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-user-check"></i>
+
+<h2>132</h2>
+
+<p>Active Users</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-user-slash"></i>
+
+<h2>8</h2>
+
+<p>Blocked Users</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-user-plus"></i>
+
+<h2>5</h2>
+
+<p>New Today</p>
+
+</div>
+
+</div>
+
+<!-- Search & Actions -->
+
+<div class="table-section">
+
+<h2>User Directory</h2>
+
+<div style="display:flex;gap:15px;justify-content:space-between;flex-wrap:wrap;margin:20px 0;">
+
+<input
+type="text"
+placeholder="Search by name or email..."
+style="flex:1;padding:12px;border:none;border-radius:10px;min-width:250px;">
+
+<button class="btn">
+
+<i class="fa-solid fa-user-plus"></i>
+
+Add User
+
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Role</th>
+
+<th>Status</th>
+
+<th>Last Login</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>001</td>
+
+<td>Ajit</td>
+
+<td>ajit@gmail.com</td>
+
+<td>Admin</td>
+
+<td><span class="success">Active</span></td>
+
+<td>08 Jul 2026</td>
+
+<td>
+
+<button class="btn">Edit</button>
+
+<button class="btn">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>002</td>
+
+<td>Rahul</td>
+
+<td>rahul@gmail.com</td>
+
+<td>User</td>
+
+<td><span class="success">Active</span></td>
+
+<td>08 Jul 2026</td>
+
+<td>
+
+<button class="btn">Edit</button>
+
+<button class="btn">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>003</td>
+
+<td>Priya</td>
+
+<td>priya@gmail.com</td>
+
+<td>User</td>
+
+<td><span class="warning">Inactive</span></td>
+
+<td>05 Jul 2026</td>
+
+<td>
+
+<button class="btn">Edit</button>
+
+<button class="btn">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>004</td>
+
+<td>Aman</td>
+
+<td>aman@gmail.com</td>
+
+<td>User</td>
+
+<td><span class="danger">Blocked</span></td>
+
+<td>02 Jul 2026</td>
+
+<td>
+
+<button class="btn">Edit</button>
+
+<button class="btn">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>005</td>
+
+<td>Sneha</td>
+
+<td>sneha@gmail.com</td>
+
+<td>User</td>
+
+<td><span class="success">Active</span></td>
+
+<td>08 Jul 2026</td>
+
+<td>
+
+<button class="btn">Edit</button>
+
+<button class="btn">Delete</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Recent Registrations -->
+
+<div class="table-section">
+
+<h2>Recent Registrations</h2>
+
+<ul style="margin-top:20px;line-height:2.2;">
+
+<li>👤 Ajit created an Admin account.</li>
+
+<li>👤 Rahul registered successfully.</li>
+
+<li>👤 Sneha verified her email.</li>
+
+<li>👤 Priya updated her profile.</li>
+
+<li>👤 Aman's account was blocked.</li>
+
+</ul>
+
+</div>
+
+<!-- User Activity -->
+
+<div class="table-section">
+
+<h2>User Activity Summary</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Activity</th>
+
+<th>Count</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Successful Logins</td>
+
+<td>580</td>
+
+</tr>
+
+<tr>
+
+<td>Failed Login Attempts</td>
+
+<td>18</td>
+
+</tr>
+
+<tr>
+
+<td>Password Resets</td>
+
+<td>11</td>
+
+</tr>
+
+<tr>
+
+<td>New Registrations</td>
+
+<td>145</td>
+
+</tr>
+
+<tr>
+
+<td>Accounts Blocked</td>
+
+<td>8</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="../assets/js/dashboard.js"></script>
+
+</body>
+
+</html>

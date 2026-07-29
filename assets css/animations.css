@@ -1,0 +1,512 @@
+/* ==========================================
+   AI PHISHING DETECTOR
+   ANIMATIONS.CSS
+========================================== */
+
+/* Fade In */
+
+@keyframes fadeIn {
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* Slide Up */
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Slide Down */
+
+@keyframes slideDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Slide Left */
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Slide Right */
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Zoom In */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Rotate */
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* Floating */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Pulse */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Glow */
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 5px #00d4ff;
+
+    }
+
+    50%{
+
+        box-shadow:0 0 30px #00d4ff;
+
+    }
+
+    100%{
+
+        box-shadow:0 0 5px #00d4ff;
+
+    }
+
+}
+
+/* Neon Border */
+
+@keyframes borderGlow{
+
+    0%{
+
+        border-color:#00d4ff;
+
+    }
+
+    50%{
+
+        border-color:#00ff88;
+
+    }
+
+    100%{
+
+        border-color:#00d4ff;
+
+    }
+
+}
+
+/* Background Gradient */
+
+@keyframes gradient{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+/* Blink */
+
+@keyframes blink{
+
+    0%,100%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:.3;
+
+    }
+
+}
+
+/* Bounce */
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+}
+
+/* Shake */
+
+@keyframes shake{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    25%{
+
+        transform:translateX(-6px);
+
+    }
+
+    50%{
+
+        transform:translateX(6px);
+
+    }
+
+    75%{
+
+        transform:translateX(-6px);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Ripple */
+
+@keyframes ripple{
+
+    from{
+
+        transform:scale(.2);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:scale(2);
+
+        opacity:0;
+
+    }
+
+}
+
+/* Loader */
+
+@keyframes loader{
+
+    0%{
+
+        transform:rotate(0deg);
+
+    }
+
+    100%{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================
+   Animation Utility Classes
+========================== */
+
+.fade-in{
+
+    animation:fadeIn .8s ease;
+
+}
+
+.slide-up{
+
+    animation:slideUp .8s ease;
+
+}
+
+.slide-down{
+
+    animation:slideDown .8s ease;
+
+}
+
+.slide-left{
+
+    animation:slideLeft .8s ease;
+
+}
+
+.slide-right{
+
+    animation:slideRight .8s ease;
+
+}
+
+.zoom-in{
+
+    animation:zoomIn .6s ease;
+
+}
+
+.float{
+
+    animation:floating 3s ease-in-out infinite;
+
+}
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+.glow{
+
+    animation:glow 2s infinite;
+
+}
+
+.border-glow{
+
+    animation:borderGlow 3s infinite;
+
+}
+
+.rotate{
+
+    animation:rotate 8s linear infinite;
+
+}
+
+.bounce{
+
+    animation:bounce 2s infinite;
+
+}
+
+.blink{
+
+    animation:blink 1.2s infinite;
+
+}
+
+.shake{
+
+    animation:shake .4s;
+
+}
+
+/* Hover Effects */
+
+.hover-scale:hover{
+
+    transform:scale(1.05);
+
+    transition:.3s;
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-8px);
+
+    transition:.3s;
+
+}
+
+.hover-rotate:hover{
+
+    transform:rotate(5deg);
+
+    transition:.3s;
+
+}
+
+.hover-glow:hover{
+
+    box-shadow:0 0 25px rgba(0,212,255,.5);
+
+    transition:.3s;
+
+}
+
+/* Smooth */
+
+.smooth{
+
+    transition:.3s ease;
+
+}

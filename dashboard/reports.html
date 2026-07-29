@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Reports | PhishGuard AI</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/reports.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>PhishGuard AI</h2>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+            <li><a href="scanner.html">Scanner</a></li>
+
+            <li><a href="analytics.html">Analytics</a></li>
+
+            <li><a href="history.html">History</a></li>
+
+            <li><a href="notifications.html">Notifications</a></li>
+
+            <li><a class="active"
+                   href="reports.html">Reports</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+            <li><a href="help.html">Help</a></li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="top-header">
+
+            <div>
+
+                <h1>Reports</h1>
+
+                <p>
+                    View, generate and export phishing
+                    detection reports.
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- Summary Cards -->
+
+        <section class="reports-summary">
+
+            <div class="stat-card">
+
+                <h3>Total Reports</h3>
+
+                <h2>1,248</h2>
+
+                <span>+15 This Week</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Generated Today</h3>
+
+                <h2>37</h2>
+
+                <span>Latest Activity</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Phishing Cases</h3>
+
+                <h2>486</h2>
+
+                <span>Detected URLs</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Safe URLs</h3>
+
+                <h2>762</h2>
+
+                <span>Verified Secure</span>
+
+            </div>
+
+        </section>
+
+        <!-- Report Actions -->
+
+        <section class="report-actions">
+
+            <button class="dashboard-btn primary-btn">
+                Generate Report
+            </button>
+
+            <button class="dashboard-btn success-btn">
+                Export PDF
+            </button>
+
+            <button class="dashboard-btn">
+                Export Excel
+            </button>
+
+        </section>
+
+
+
+        <!-- Filter Section -->
+
+        <section class="report-filter">
+
+            <input
+                type="text"
+                placeholder="Search reports...">
+
+            <select>
+
+                <option>All Reports</option>
+
+                <option>Daily</option>
+
+                <option>Weekly</option>
+
+                <option>Monthly</option>
+
+                <option>Yearly</option>
+
+            </select>
+
+            <select>
+
+                <option>All Status</option>
+
+                <option>Safe</option>
+
+                <option>Phishing</option>
+
+                <option>Suspicious</option>
+
+            </select>
+
+        </section>
+
+
+
+        <!-- Reports Table -->
+
+        <section class="report-table-section">
+
+            <h2>Generated Reports</h2>
+
+            <table class="report-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Report ID</th>
+
+                        <th>Date</th>
+
+                        <th>Total URLs</th>
+
+                        <th>Phishing</th>
+
+                        <th>Safe</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>REP-1001</td>
+
+                        <td>29 Jul 2026</td>
+
+                        <td>250</td>
+
+                        <td>93</td>
+
+                        <td>157</td>
+
+                        <td>
+                            <span class="badge badge-success">
+                                Completed
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="dashboard-btn primary-btn">
+                                View
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>REP-1002</td>
+
+                        <td>28 Jul 2026</td>
+
+                        <td>180</td>
+
+                        <td>61</td>
+
+                        <td>119</td>
+
+                        <td>
+                            <span class="badge badge-success">
+                                Completed
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="dashboard-btn primary-btn">
+                                View
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Report Statistics -->
+
+        <section class="report-stats">
+
+            <div class="dashboard-box">
+
+                <h2>Report Statistics</h2>
+
+                <div class="stats-grid">
+
+                    <div class="stat-item">
+
+                        <h3>Detection Accuracy</h3>
+
+                        <h2>98.2%</h2>
+
+                    </div>
+
+                    <div class="stat-item">
+
+                        <h3>Precision</h3>
+
+                        <h2>97.9%</h2>
+
+                    </div>
+
+                    <div class="stat-item">
+
+                        <h3>Recall</h3>
+
+                        <h2>98.4%</h2>
+
+                    </div>
+
+                    <div class="stat-item">
+
+                        <h3>F1-Score</h3>
+
+                        <h2>98.1%</h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Recent Activity -->
+
+        <section class="dashboard-box">
+
+            <h2>Recent Report Activity</h2>
+
+            <ul class="activity-list">
+
+                <li>
+                    ✔ Daily phishing report generated successfully.
+                </li>
+
+                <li>
+                    ✔ Weekly analytics report exported to PDF.
+                </li>
+
+                <li>
+                    ✔ Monthly dataset summary created.
+                </li>
+
+                <li>
+                    ✔ New phishing detection statistics updated.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+            <p>
+                © 2026 PhishGuard AI |
+                Deep Learning Based Phishing Detection System
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

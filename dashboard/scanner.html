@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>URL Scanner | PhishGuard AI</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/scanner.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>PhishGuard AI</h2>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+            <li><a class="active"
+                   href="scanner.html">Scanner</a></li>
+
+            <li><a href="analytics.html">Analytics</a></li>
+
+            <li><a href="history.html">History</a></li>
+
+            <li><a href="reports.html">Reports</a></li>
+
+            <li><a href="notifications.html">Notifications</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+            <li><a href="help.html">Help</a></li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="top-header">
+
+            <div>
+
+                <h1>URL Scanner</h1>
+
+                <p>
+                    Scan any URL using the Deep Learning
+                    phishing detection model.
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- Scanner Form -->
+
+        <section class="scanner-section">
+
+            <div class="scanner-card">
+
+                <h2>Scan Website URL</h2>
+
+                <form id="scannerForm">
+
+                    <div class="form-group">
+
+                        <label>Enter Website URL</label>
+
+                        <input
+                            type="url"
+                            id="url"
+                            placeholder="https://example.com"
+                            required>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="dashboard-btn primary-btn">
+
+                        Scan URL
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Prediction Result -->
+
+        <section class="result-section">
+
+            <div class="result-card">
+
+                <h2>Prediction Result</h2>
+
+                <div class="prediction-box">
+
+                    <h1 id="predictionResult">
+                        Waiting for Scan...
+                    </h1>
+
+                    <p id="predictionMessage">
+                        Enter a URL and click
+                        <strong>Scan URL</strong>
+                        to analyze it.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- URL Feature Analysis -->
+
+        <section class="feature-section">
+
+            <div class="dashboard-box">
+
+                <h2>URL Feature Analysis</h2>
+
+                <table class="feature-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Feature</th>
+
+                            <th>Value</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>URL Length</td>
+
+                            <td id="urlLength">--</td>
+
+                            <td>Analyzing...</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>HTTPS</td>
+
+                            <td id="httpsStatus">--</td>
+
+                            <td>Analyzing...</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Domain Age</td>
+
+                            <td>--</td>
+
+                            <td>Analyzing...</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Special Characters</td>
+
+                            <td id="specialChars">--</td>
+
+                            <td>Analyzing...</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Suspicious Keywords</td>
+
+                            <td id="keywords">--</td>
+
+                            <td>Analyzing...</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Scan Summary -->
+
+        <section class="summary-section">
+
+            <div class="dashboard-box">
+
+                <h2>Scan Summary</h2>
+
+                <div class="summary-grid">
+
+                    <div class="summary-item">
+
+                        <h3>Risk Level</h3>
+
+                        <span id="riskLevel"
+                              class="badge badge-info">
+
+                            Unknown
+
+                        </span>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <h3>Confidence Score</h3>
+
+                        <p id="confidenceScore">
+
+                            0%
+
+                        </p>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <h3>Scan Time</h3>
+
+                        <p id="scanTime">
+
+                            --
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Scan History -->
+
+        <section class="dashboard-box">
+
+            <h2>Recent Scans</h2>
+
+            <table class="scan-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Date</th>
+                        <th>URL</th>
+                        <th>Prediction</th>
+                        <th>Confidence</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="recentScans">
+
+                    <tr>
+
+                        <td>29 Jul 2026</td>
+
+                        <td>https://example.com</td>
+
+                        <td>Legitimate</td>
+
+                        <td>98.6%</td>
+
+                        <td>
+                            <span class="badge badge-success">
+                                Safe
+                            </span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>29 Jul 2026</td>
+
+                        <td>http://secure-login-update.xyz</td>
+
+                        <td>Phishing</td>
+
+                        <td>99.2%</td>
+
+                        <td>
+                            <span class="badge badge-danger">
+                                Dangerous
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+
+        <!-- Scanner Actions -->
+
+        <section class="quick-actions">
+
+            <button class="dashboard-btn primary-btn">
+
+                View Full History
+
+            </button>
+
+            <button class="dashboard-btn success-btn">
+
+                Export Results
+
+            </button>
+
+            <button class="dashboard-btn">
+
+                Clear Results
+
+            </button>
+
+        </section>
+
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+            <p>
+
+                © 2026 PhishGuard AI |
+                Deep Learning Based Phishing Detection System
+
+            </p>
+
+        </footer>
+
+    </main>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scanner.js"></script>
+
+</body>
+
+</html>

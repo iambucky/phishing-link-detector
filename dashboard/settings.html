@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | PhishGuard AI</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>PhishGuard AI</h2>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="scanner.html">Scanner</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a class="active" href="settings.html">Settings</a></li>
+            <li><a href="help.html">Help</a></li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="top-header">
+
+            <div>
+
+                <h1>System Settings</h1>
+
+                <p>
+                    Configure application preferences,
+                    security, notifications and system options.
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- General Settings -->
+
+        <section class="settings-section">
+
+            <div class="dashboard-box">
+
+                <h2>General Settings</h2>
+
+                <form class="settings-form">
+
+                    <div class="form-group">
+
+                        <label>Application Name</label>
+
+                        <input
+                            type="text"
+                            value="PhishGuard AI">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Default Language</label>
+
+                        <select>
+
+                            <option selected>English</option>
+                            <option>Hindi</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Time Zone</label>
+
+                        <select>
+
+                            <option selected>
+                                Asia/Kolkata (IST)
+                            </option>
+
+                            <option>UTC</option>
+
+                        </select>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Security Settings -->
+
+        <section class="settings-section">
+
+            <div class="dashboard-box">
+
+                <h2>Security Settings</h2>
+
+                <form class="settings-form">
+
+                    <div class="form-group">
+
+                        <label>Enable Two-Factor Authentication</label>
+
+                        <select>
+
+                            <option selected>Enabled</option>
+                            <option>Disabled</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Session Timeout</label>
+
+                        <select>
+
+                            <option>15 Minutes</option>
+                            <option selected>30 Minutes</option>
+                            <option>1 Hour</option>
+                            <option>Never</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Password Expiry</label>
+
+                        <select>
+
+                            <option selected>90 Days</option>
+                            <option>180 Days</option>
+                            <option>365 Days</option>
+
+                        </select>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Notification Settings -->
+
+        <section class="settings-section">
+
+            <div class="dashboard-box">
+
+                <h2>Notification Preferences</h2>
+
+                <form class="settings-form">
+
+                    <div class="checkbox-group">
+
+                        <label>
+
+                            <input type="checkbox" checked>
+
+                            Email Notifications
+
+                        </label>
+
+                    </div>
+
+                    <div class="checkbox-group">
+
+                        <label>
+
+                            <input type="checkbox" checked>
+
+                            Scan Completion Alerts
+
+                        </label>
+
+                    </div>
+
+                    <div class="checkbox-group">
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            SMS Notifications
+
+                        </label>
+
+                    </div>
+
+                    <div class="checkbox-group">
+
+                        <label>
+
+                            <input type="checkbox" checked>
+
+                            Security Alerts
+
+                        </label>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Theme Settings -->
+
+        <section class="settings-section">
+
+            <div class="dashboard-box">
+
+                <h2>Appearance</h2>
+
+                <form class="settings-form">
+
+                    <div class="form-group">
+
+                        <label>Theme</label>
+
+                        <select>
+
+                            <option selected>Light</option>
+                            <option>Dark</option>
+                            <option>System Default</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Accent Color</label>
+
+                        <input
+                            type="color"
+                            value="#2563eb">
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- System Information -->
+
+        <section class="settings-section">
+
+            <div class="dashboard-box">
+
+                <h2>System Information</h2>
+
+                <div class="settings-info">
+
+                    <div class="info-item">
+
+                        <h4>Application</h4>
+
+                        <p>PhishGuard AI</p>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <h4>Version</h4>
+
+                        <p>Version 1.0.0</p>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <h4>Machine Learning Model</h4>
+
+                        <p>Artificial Neural Network (ANN)</p>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <h4>Dataset</h4>
+
+                        <p>Phishing URL Dataset</p>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <h4>Database</h4>
+
+                        <p>SQLite</p>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <h4>Last Updated</h4>
+
+                        <p>29 July 2026</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Action Buttons -->
+
+        <section class="settings-actions">
+
+            <button
+                type="submit"
+                class="dashboard-btn primary-btn">
+
+                Save Settings
+
+            </button>
+
+            <button
+                type="reset"
+                class="dashboard-btn">
+
+                Reset Settings
+
+            </button>
+
+        </section>
+
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+            <p>
+
+                © 2026 PhishGuard AI |
+                Deep Learning Based Phishing Detection System
+
+            </p>
+
+        </footer>
+
+    </main>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/settings.js"></script>
+
+</body>
+
+</html>
+

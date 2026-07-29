@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dataset Management | AI Phishing Detector</title>
+
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h2>Admin Panel</h2>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="admin-dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="users.html">
+
+<i class="fa-solid fa-users"></i>
+
+Users
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="#">
+
+<i class="fa-solid fa-database"></i>
+
+Dataset
+
+</a>
+
+</li>
+
+<li>
+
+<a href="model-status.html">
+
+<i class="fa-solid fa-brain"></i>
+
+AI Model
+
+</a>
+
+</li>
+
+<li>
+
+<a href="logs.html">
+
+<i class="fa-solid fa-file-lines"></i>
+
+Logs
+
+</a>
+
+</li>
+
+<li>
+
+<a href="system-health.html">
+
+<i class="fa-solid fa-server"></i>
+
+System Health
+
+</a>
+
+</li>
+
+<li>
+
+<a href="../login.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>Dataset Management</h1>
+
+<div class="profile">
+
+<img src="../assets/images/avatar.png" width="40">
+
+<span>Administrator</span>
+
+</div>
+
+</div>
+
+<!-- Cards -->
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-database"></i>
+
+<h2>11,055</h2>
+
+<p>Total URLs</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h2>4,898</h2>
+
+<p>Phishing URLs</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>6,157</h2>
+
+<p>Legitimate URLs</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-file-csv"></i>
+
+<h2>CSV</h2>
+
+<p>Dataset Format</p>
+
+</div>
+
+</div>
+
+<!-- Dataset Information -->
+
+<div class="table-section">
+
+<h2>Dataset Information</h2>
+
+<table>
+
+<tr>
+
+<th>Dataset Name</th>
+
+<td>phishing.csv</td>
+
+</tr>
+
+<tr>
+
+<th>Total Records</th>
+
+<td>11,055</td>
+
+</tr>
+
+<tr>
+
+<th>Features</th>
+
+<td>30</td>
+
+</tr>
+
+<tr>
+
+<th>Target Classes</th>
+
+<td>Phishing / Legitimate</td>
+
+</tr>
+
+<tr>
+
+<th>Training Split</th>
+
+<td>80%</td>
+
+</tr>
+
+<tr>
+
+<th>Testing Split</th>
+
+<td>20%</td>
+
+</tr>
+
+<tr>
+
+<th>Last Updated</th>
+
+<td>08 July 2026</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- Upload Dataset -->
+
+<div class="table-section">
+
+<h2>Upload New Dataset</h2>
+
+<form>
+
+<input
+type="file"
+accept=".csv,.xlsx"
+style="margin:20px 0;">
+
+<br>
+
+<button class="btn">
+
+Upload Dataset
+
+</button>
+
+</form>
+
+</div>
+
+<!-- Recent Uploads -->
+
+<div class="table-section">
+
+<h2>Recent Uploaded Files</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>File Name</th>
+
+<th>Size</th>
+
+<th>Date</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>phishing.csv</td>
+
+<td>2.8 MB</td>
+
+<td>08 Jul 2026</td>
+
+<td><span class="success">Available</span></td>
+
+</tr>
+
+<tr>
+
+<td>test.csv</td>
+
+<td>720 KB</td>
+
+<td>08 Jul 2026</td>
+
+<td><span class="success">Available</span></td>
+
+</tr>
+
+<tr>
+
+<td>train.csv</td>
+
+<td>2.1 MB</td>
+
+<td>08 Jul 2026</td>
+
+<td><span class="success">Available</span></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="../assets/js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>System Health | AI Phishing Detector</title>
+
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h2>Admin Panel</h2>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="admin-dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="users.html">
+
+<i class="fa-solid fa-users"></i>
+
+Users
+
+</a>
+
+</li>
+
+<li>
+
+<a href="dataset.html">
+
+<i class="fa-solid fa-database"></i>
+
+Dataset
+
+</a>
+
+</li>
+
+<li>
+
+<a href="model-status.html">
+
+<i class="fa-solid fa-brain"></i>
+
+AI Model
+
+</a>
+
+</li>
+
+<li>
+
+<a href="logs.html">
+
+<i class="fa-solid fa-file-lines"></i>
+
+Logs
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="#">
+
+<i class="fa-solid fa-server"></i>
+
+System Health
+
+</a>
+
+</li>
+
+<li>
+
+<a href="../login.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>System Health Monitor</h1>
+
+<div class="profile">
+
+<img src="../assets/images/avatar.png" width="40">
+
+<span>Administrator</span>
+
+</div>
+
+</div>
+
+<!-- Health Cards -->
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-server"></i>
+
+<h2>Online</h2>
+
+<p>Server Status</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-microchip"></i>
+
+<h2>22%</h2>
+
+<p>CPU Usage</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-memory"></i>
+
+<h2>48%</h2>
+
+<p>Memory Usage</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hard-drive"></i>
+
+<h2>61%</h2>
+
+<p>Disk Usage</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-network-wired"></i>
+
+<h2>98 Mbps</h2>
+
+<p>Network Speed</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h2>99.98%</h2>
+
+<p>System Uptime</p>
+
+</div>
+
+</div>
+
+<!-- System Overview -->
+
+<div class="table-section">
+
+<h2>System Overview</h2>
+
+<table>
+
+<tr>
+<th>Operating System</th>
+<td>Windows 11</td>
+</tr>
+
+<tr>
+<th>Python Version</th>
+<td>3.12</td>
+</tr>
+
+<tr>
+<th>Flask Server</th>
+<td>Running</td>
+</tr>
+
+<tr>
+<th>TensorFlow</th>
+<td>Installed</td>
+</tr>
+
+<tr>
+<th>Database</th>
+<td>SQLite Connected</td>
+</tr>
+
+<tr>
+<th>ANN Model</th>
+<td>Loaded Successfully</td>
+</tr>
+
+<tr>
+<th>Dataset Status</th>
+<td>Available</td>
+</tr>
+
+<tr>
+<th>Last Backup</th>
+<td>08 July 2026</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Services -->
+
+<div class="table-section">
+
+<h2>Running Services</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Service</th>
+
+<th>Status</th>
+
+<th>Response Time</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Web Server</td>
+
+<td><span class="success">Running</span></td>
+
+<td>18 ms</td>
+
+</tr>
+
+<tr>
+
+<td>AI Prediction Engine</td>
+
+<td><span class="success">Running</span></td>
+
+<td>42 ms</td>
+
+</tr>
+
+<tr>
+
+<td>Database Service</td>
+
+<td><span class="success">Connected</span></td>
+
+<td>10 ms</td>
+
+</tr>
+
+<tr>
+
+<td>Authentication Service</td>
+
+<td><span class="success">Running</span></td>
+
+<td>15 ms</td>
+
+</tr>
+
+<tr>
+
+<td>File Upload Service</td>
+
+<td><span class="success">Running</span></td>
+
+<td>21 ms</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Alerts -->
+
+<div class="table-section">
+
+<h2>System Alerts</h2>
+
+<ul style="margin-top:20px;line-height:2.2;">
+
+<li>🟢 Server is operating normally.</li>
+
+<li>🟢 AI Model loaded successfully.</li>
+
+<li>🟢 Database connection established.</li>
+
+<li>🟢 Daily backup completed successfully.</li>
+
+<li>🟢 No security threats detected.</li>
+
+<li>🟢 Firewall protection is enabled.</li>
+
+<li>🟢 SSL Certificate is valid.</li>
+
+</ul>
+
+</div>
+
+<!-- Resource Usage -->
+
+<div class="table-section">
+
+<h2>Resource Usage</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Resource</th>
+
+<th>Usage</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>CPU</td>
+
+<td>22%</td>
+
+<td><span class="success">Normal</span></td>
+
+</tr>
+
+<tr>
+
+<td>RAM</td>
+
+<td>48%</td>
+
+<td><span class="success">Normal</span></td>
+
+</tr>
+
+<tr>
+
+<td>Storage</td>
+
+<td>61%</td>
+
+<td><span class="warning">Moderate</span></td>
+
+</tr>
+
+<tr>
+
+<td>Network</td>
+
+<td>98 Mbps</td>
+
+<td><span class="success">Stable</span></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Quick Actions -->
+
+<div class="table-section">
+
+<h2>Quick Actions</h2>
+
+<button class="btn">Restart Server</button>
+
+<button class="btn">Check Database</button>
+
+<button class="btn">Backup Data</button>
+
+<button class="btn">Refresh Status</button>
+
+</div>
+
+</div>
+
+<script src="../assets/js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | AI Phishing Detector</title>
+
+    <link rel="stylesheet" href="assets/css/register.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="background">
+
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+
+    </div>
+
+    <div class="register-container">
+
+        <div class="register-card">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h2>AI Phishing Detector</h2>
+
+            </div>
+
+            <h1>Create Account</h1>
+
+            <p>Register to access your AI Security Dashboard.</p>
+
+            <form id="registerForm">
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder="Full Name"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required>
+
+                    <i class="fa-solid fa-eye toggle-password"
+                        onclick="togglePassword('password',this)">
+                    </i>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        required>
+
+                    <i class="fa-solid fa-eye toggle-password"
+                        onclick="togglePassword('confirmPassword',this)">
+                    </i>
+
+                </div>
+
+                <div class="strength">
+
+                    <span>Password Strength</span>
+
+                    <div class="strength-bar">
+
+                        <div id="strengthFill"></div>
+
+                    </div>
+
+                </div>
+
+                <button type="submit">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <div class="login-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="assets/js/register.js"></script>
+
+</body>
+
+</html>

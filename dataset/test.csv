@@ -1,0 +1,16 @@
+url,label
+https://google.com,Legitimate
+https://github.com,Legitimate
+https://stackoverflow.com,Legitimate
+https://python.org,Legitimate
+https://wikipedia.org,Legitimate
+https://openai.com,Legitimate
+http://secure-account-login.xyz,Phishing
+http://verify-user-details.com,Phishing
+http://banking-security-check.xyz,Phishing
+http://paypal-confirmation-required.com,Phishing
+http://free-prize-winning.xyz,Phishing
+http://update-your-password-now.com,Phishing
+http://account-verification-alert.xyz,Phishing
+http://login-security-update.xyz,Phishing
+http://payment-confirmation-service.com,Phishing

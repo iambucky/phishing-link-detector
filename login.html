@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | AI Phishing Detector</title>
+
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="background">
+
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+
+    </div>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h2>AI Phishing Detector</h2>
+
+            </div>
+
+            <h1>Welcome Back</h1>
+
+            <p>Login to continue to your dashboard.</p>
+
+            <form>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        id="password"
+                        type="password"
+                        placeholder="Password"
+                        required>
+
+                    <i
+                        class="fa-solid fa-eye toggle-password"
+                        onclick="togglePassword()"></i>
+
+                </div>
+
+                <div class="options">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="forgot-password.html">
+
+                        Forgot Password?
+
+                    </a>
+
+                </div>
+
+                <button type="button"
+                    onclick="window.location.href='dashboard/dashboard.html'">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <div class="divider">
+
+                <span>OR</span>
+
+            </div>
+
+            <div class="social-login">
+
+                <button>
+
+                    <i class="fab fa-google"></i>
+
+                    Google
+
+                </button>
+
+                <button>
+
+                    <i class="fab fa-github"></i>
+
+                    GitHub
+
+                </button>
+
+            </div>
+
+            <div class="register-link">
+
+                Don't have an account?
+
+                <a href="register.html">
+
+                    Register
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="assets/js/login.js"></script>
+
+</body>
+
+</html>
